@@ -31,6 +31,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
+# Add App directory
+add_subdirectory(App)
+
 # Enable CMake support for ASM and C languages
 enable_language(C ASM)
 
@@ -65,4 +68,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
 
     # Add user defined libraries
+    app
 )
