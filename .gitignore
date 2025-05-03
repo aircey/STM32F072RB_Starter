@@ -1,7 +1,7 @@
 /.mxproject
 /build
 /build.ninja
-/cmake_install.cmake
+cmake_install.cmake
 /CMakeCache.txt
 /CMakePresets.json
 /compile_commands.json
